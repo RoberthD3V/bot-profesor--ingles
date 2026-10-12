@@ -1,0 +1,33 @@
+{
+  "name": "bot-profesor-ingles",
+  "version": "1.0.0",
+  "description": "Bot de Telegram que hace de profesor de inglés",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js",
+    "test-ia": "node test-groq.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "groq-sdk": "^1.6.0",
+    "node-cron": "^4.6.0",
+    "telegraf": "^4.16.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "bot.js",
+      "src"
+    ]
+  }
+}
